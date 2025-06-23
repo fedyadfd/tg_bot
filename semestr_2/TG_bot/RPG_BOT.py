@@ -52,7 +52,6 @@ class Enemy:
 def delay(sec: int):
     asyncio.run(asyncio.sleep(sec))
 
-
 def read_player(msg: Message):
     return users.read("user_id", msg.chat.id)
 
